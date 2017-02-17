@@ -1,0 +1,214 @@
+/***********************************
+			RESET CSS + GENERAL
+************************************/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+/***********************************
+			HEADER
+************************************/
+header
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+	background-color: #0484BD;
+	border-bottom: 1px solid #727272;
+}
+
+header h1 {
+	color: white;
+	font-family: Courier;
+}
+
+
+/***********************************
+			NAVIGATION
+************************************/
+
+nav
+{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+	box-shadow: 0 2px 2px 2px
+				rgba(0,0,0,0.14),0 2px 2px 2px
+				rgba(0,0,0,0.12),0 2px 2px -5px
+				rgba(0,0,0,0.3);
+}
+
+
+div
+{
+	margin-right:50px;
+}
+
+
+
+
+nav ul
+{
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul button
+{
+	margin: 10px;
+	height: auto;
+	width: auto;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 0.7s;
+}
+
+nav ul button:hover
+{
+	transform: translateY(-8px);
+	transition: 0.7s
+}
+
+nav ul button i {
+	color: black;
+}
+
+
+#paragraphe
+{
+ margin-right: 4em;
+}
+
+
+input
+{
+	padding: 6px;
+	margin-right: 10px;
+	height: 40px;
+	width: 80px;
+	background:none;
+	outline: none;
+
+
+}
+
+select
+{
+	padding: 8px;
+	height: 40px;
+	width: 120px;
+	outline: none;
+	border: none;
+	background-color: #0484BD;
+	color: #fff;
+}
+
+select option
+{
+	color: #fff;
+}
+
+
+
+
+
+/***********************************
+			ZONE DE TEXTE
+************************************/
+
+#prevZone
+{
+	margin-top: 40px;
+	height: 500px;
+	width: 80%;
+	padding: 10px;
+	overflow: auto;
+	box-shadow: 0 16px 24px 2px
+				rgba(0,0,0,0.14),0 6px 30px 5px
+				rgba(0,0,0,0.12),0 8px 10px -5px
+				rgba(0,0,0,0.3);
+}
+
+
+
+
+/*******************
+	BUTTONS ZONES
+********************/
+
+#btnZone
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+button
+{
+
+	height: 2.5em;
+	width: 20em;
+	margin-top: 35px;
+	font-size: 18px;
+	border: 1px solid #fff;
+	text-align: center;
+	color: white;
+	outline: none;
+	background-color: #0484BD;
+	transition: 0.7s;
+	cursor: pointer;
+}
+
+button:hover
+{
+	transform:rotateY(30deg);
+	transition: 0.7s;
+}
+
+.showBtn
+{
+	height: 2.5em;
+	width: 8em;
+	border: none;
+	outline: none;
+	margin-left: 2em;
+	background-color: #34A853;
+	color: #fff;
+	text-align: center;
+	transition: 0.7s;
+	cursor: pointer;
+}
+.showBtn:hover
+{
+	transform:rotateY(30deg);
+  transition: 0.7s;
+}
+
+#supprBtn
+{
+	background-color: #EA4335;
+}

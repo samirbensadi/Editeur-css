@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="editeur.js"></script>
+		<title>essai agsi</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>EDITEUR CSS</h1>
+				<!-- En tête (Titre de l'app) -->
+			</header>
+
+			<nav id="navigation">
+
+				<div>
+					<ul>
+						<button title="Ajouter un paragraphe" id="paragraphe" onclick="align('insertParagraph')"><i class="fa fa-paragraph fa-3x" aria-hidden="true"></i></button>
+						<button title="aligner à gauche" onclick="align('justifyleft', this.value);"> <i class="fa fa-align-left fa-3x" aria-hidden="true"></i></button>
+						<button title="centrer" onclick="align('justifycenter', this.value);"><i  class="fa fa-align-center fa-3x" aria-hidden="true"></i></button>
+						<button title="justifier" onclick="align('justifyfull', this.value);"><i  class="fa fa-align-justify fa-3x" aria-hidden="true"></i></button>
+						<button title="aligner à droite" onclick="align('justifyright', this.value);"><i class="fa fa-align-right fa-3x" aria-hidden="true"></i></button>
+					</ul>
+				</div>
+
+
+
+
+				<input id="changeColor" onchange="color('foreColor',this.value);" type="color" name="color" value="#0484BD">
+
+				<select onchange="txtSize('fontSize', this.value); this.selectedIndex = 0;" name="txtSize">
+					<option value="default" selected>Font-Size</option>
+					<option value="1">taille 1</option>
+					<option value="2">taille 2</option>
+					<option value="3">taille 3</option>
+					<option value="4">taille 4</option>
+					<option value="5">taille 5</option>
+					<option value="6">taille 6</option>
+					<option value="7">taille 7</option>
+				</select>
+			</nav>
+
+
+			<section id="prevZone" contenteditable="true">
+
+			</section>
+
+			<section id="btnZone">
+				<button onclick="save()" id="saveBtn">SAVE STYLE</button>
+				<button onclick="suppr()" id="supprBtn"> DELETE ALL</button>
+			<section>
+
+
+		</main>
+	</body>
+</html>
